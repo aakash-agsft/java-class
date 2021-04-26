@@ -8,6 +8,8 @@ import java.io.InputStreamReader;
 public class SuperKeyDemo {
 	public static void main(String[] args) throws IOException{
 		try {
+		Manager manager = new Manager();
+		System.out.println(manager.getResponsibility());
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Enter name: ");
 		String name = br.readLine();
@@ -56,6 +58,9 @@ class Employee extends Person{
 	public Employee() {
 		
 	}
+	public String getResponsibility() {
+		return "To work";
+	}
 	public void printData() {
 		super.printData();
 		System.out.println("Employee Id: "+employeeid+"\nSalary: "+salary+"\nCompany Name: "+companyname);
@@ -71,9 +76,14 @@ class Manager extends Employee{
 	public String toString() {
 		return department;
 	}
+	public Manager() {
+		
+	}
 	public void printData() {
 		super.printData();
 		System.out.println("Department: "+department);
 	}
-	
+	public String getResponsibility() {
+		return "To work, to manage";
+	}
 }
