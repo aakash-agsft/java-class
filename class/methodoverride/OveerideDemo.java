@@ -24,7 +24,7 @@ class Figure{
 		this.length = length;
 	}
 	public double getArea() {
-		return length * breadth;
+		return 0;
 	}
 }
 class Cube extends Figure{
