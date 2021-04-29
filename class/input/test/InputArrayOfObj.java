@@ -1,6 +1,5 @@
 package input.test;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
@@ -8,7 +7,7 @@ public class InputArrayOfObj {
 	public static void main(String[] args) throws IOException {
 		try {
 		InputStreamReader is = new InputStreamReader(System.in);
-		BufferedReader br = new BufferedReader(is);
+		java.io.BufferedReader br = new java.io.BufferedReader(is);
 		System.out.print("How many employess you want?: ");
 		int size = Integer.parseInt(br.readLine().trim());
 		Employee emps[] = new Employee[size];
