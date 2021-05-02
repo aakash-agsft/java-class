@@ -1,0 +1,89 @@
+Interface 
+Only abstarct
+we cannot instantiate
+all are by default public;
+variables and functions
+Functions: abstarct and public
+varibales: they are static, final public 
+
+
+
+Structure:
+Role based inheritance
+
+Roles--> Implemenmtation
+
+Abstarct
+both
+we cannot instantiate
+
+
+
+interface ABC{
+public void A();
+void B();
+protected void C();
+//that is why it made all by defualy public
+}
+
+class OuterPcakegClass implemets ABC{
+	
+}
+
+Diamond Problem:
+
+C++ version;
+			Base
+	D1(m1(), int x)				D2(m1(), int x)
+				D3(x???)
+
+Java version:
+	D1(m1(), int x)				D2Interface(m1(), int x)
+				D3(x, m1())
+
+class d3 extends D1 implements D2NInter...{
+
+}
+
+
+class D3 extends D1,D2{
+
+}
+class ABC extends A, B{
+
+
+}
+I WILL ALLOW ONLY ONE CLASS TO EXTEND BUT MANY INTERFACE TO IMPLEMENT
+
+class ABC extends IAmAbstarctClass{
+
+}
+
+class ABC implements Interface1,interface2, interfcae3.....{
+
+
+}
+
+
+class ABC exetnds ABCAbtarct implemets Interfaxe1{
+//all teh abstrarct methods of Abstrct class
+//all the methods of interafxe
+
+}
+
+
+
+Interface inheritnace:::
+
+
+
+class--->>> Class extends
+interface---->>> Interface exetnds
+
+
+
+Class--->>Class extends-->ONE
+Class-->>interface implements--->One or many
+interface --->>interface extemds--->>One or many
+interface---->>class ????
+I
