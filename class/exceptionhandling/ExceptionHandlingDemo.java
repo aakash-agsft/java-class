@@ -7,10 +7,10 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ExceptionHandlingDemo {
-public static void main(String[] args) {
+public static void main(String[] args) throws IOException {
 	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	System.out.print("Enter number: ");
-	try {
+	try {//NullPointerException
 	int x = Integer.parseInt(br.readLine());
 	if(x>10) {
 		ArrayIndexOutOfBoundsException e = new ArrayIndexOutOfBoundsException();
@@ -30,8 +30,6 @@ public static void main(String[] args) {
 	int x1 = sc.nextInt();
 	}catch (InputMismatchException e) {
 		System.out.println("Catched in Input Mistacch");
-	}catch(IOException e) {
-		System.out.println("Catched in IOException");
 	}catch(NumberFormatException e) {
 		System.out.println("Catched in Number format");
 	}
