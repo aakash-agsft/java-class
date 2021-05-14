@@ -34,7 +34,7 @@ class ManagerS extends EmployeeS{
 	int managerid;
 	public ManagerS() {
 		super();
-		Systezm.out.println("Manager obj created");
+		System.out.println("Manager obj created");
 	}
 	public ManagerS(int managerid, int personid, int employeeid) {
 		super(employeeid, personid);
